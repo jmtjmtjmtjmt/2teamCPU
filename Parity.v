@@ -4,7 +4,7 @@ input   a, b, c;
 output P;
 reg     P;
 
-always @(a, b, c) begin
+ always @(*) begin
  assign P = (!a&!b&c) || (!a&b&!c) || (a&!b&!c) || (a&b&c);
 end
 

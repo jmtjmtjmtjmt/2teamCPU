@@ -1,3 +1,4 @@
+# Module
 module Decoder_Jiyun(A, Y);
 input         [1:0] A;
 output reg  [3:0] Y;
@@ -12,7 +13,7 @@ begin
 end
 endmodule
 
-
+// Testbench
 `timescale 1ns/100ps
 module Decoder_tb_Jiyun;
 reg  [1:0] A;

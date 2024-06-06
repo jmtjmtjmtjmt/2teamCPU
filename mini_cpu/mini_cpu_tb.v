@@ -42,7 +42,7 @@ initial begin
 
 	#30 PC = 16'd100;
 	
-	#1000 $finish;
+	#160 $finish;
 end
 
 always #5 CLK = ~CLK;

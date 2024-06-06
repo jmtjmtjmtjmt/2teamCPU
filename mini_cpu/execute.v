@@ -1,10 +1,10 @@
 module execute (
-	input		CLK,
-	input		RST_N,
-	input		START,
-	input		[1:0]	IDEN,
-	input		[3:0]  	OPCODE,
-	input		[15:0] OUT_ADDRESS_MEMORY,	// input mem[ADDRESS]
+	input	CLK,
+	input	RST_N,
+	input	START,
+	input	[1:0]	IDEN,
+	input	[3:0]  	OPCODE,
+	input	[15:0] OUT_ADDRESS_MEMORY,	// input mem[ADDRESS]
 	output	[15:0] IN_ADDRESS_MEMORY,	// output mem[ADDRESS]
 	output	[15:0] RESULT
 );
@@ -13,14 +13,14 @@ reg [15:0] ia_mem;
 reg [15:0] ar;	// Arithmetic Register : 누산기
 reg greater, equal, less;
 
-wire	[7:0] 	result_add;
-wire	[7:0] 	result_sub;
-wire	[15:0]	result_mul;
-wire	[15:0]	result_left;
-wire	[15:0]	result_right;
-wire	GREATER;
-wire	EQUAL;
-wire	LESS;
+wire [7:0] 	result_add;
+wire [7:0] 	result_sub;
+wire [15:0]	result_mul;
+wire [15:0]	result_left;
+wire [15:0]	result_right;
+wire GREATER;
+wire EQUAL;
+wire LESS;
 
 assign IN_ADDRESS_MEMORY = ia_mem;
 assign RESULT = ar;

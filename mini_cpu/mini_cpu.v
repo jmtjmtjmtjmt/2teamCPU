@@ -4,7 +4,7 @@ module mini_cpu (
 	input	 [15:0] PC,
 	input	 [15:0] OUT_ADDRESS_MEMORY,
 	input	 [15:0] OUT_MEMORY,
-  output [7:0]  ADDRESS, 
+	output [7:0] ADDRESS, 
 	output [15:0] MAR,
 	output [15:0] IN_ADDRESS_MEMORY,
 	output [15:0] RESULT
@@ -13,7 +13,7 @@ module mini_cpu (
 wire [15:0] 	MBR;
 wire [1:0]   	IDEN;
 wire [3:0]   	OPCODE;
-wire START;
+wire 		START;
 
 // Instance fetch
 fetch U_FETCH (

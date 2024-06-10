@@ -39,5 +39,5 @@ module twos_adder_tb;
     #20 a = 9;  b = 6;
     #20 a = 11; b = 12;
     #20 $finish;
-  end
+  end					//hehe
 endmodule
